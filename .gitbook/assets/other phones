@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Using Duo With Any Cell Phone or Landline - Guide to Two-Factor Authentication &middot; Duo Security</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="iO8cWATBThKq8w53dpo9NdHOoAWSYP_CBJojpsmE7MM" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="/static/css/bootstrap.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/bootstrap-responsive.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/guide.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="//cloud.webtype.com/css/e3348ae0-a196-45c6-8abf-8157c8d62fd8.css">
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="//www.cisco.com/c/dam/cdc/t/ctm-core.js"></script>
+
+</head>
+<body>
+<div class="navbar" id="top">
+<div class="navbar-inner">
+<div class="container">
+<a href="https://duo.com" alt="duo.com Main Site"><img src="/static/images/duo-security.png" id="logo" alt="Duo Security Logo"></a>
+<a class="brand" href="/">Guide to Two-Factor Authentication</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="visible-phone toggle-nav-container">
+<a href="#nav" class="toggle-nav">Show/hide navigation</a>
+</div>
+<ul class="nav nav-list">
+<li  data-localize="guide-navigation"><a href="/" alt="Guide Home Page">Home</a></li>
+<li  data-localize="guide-navigation"><a href="/enrollment" alt="Duo Enrollment Instructions">Enrollment</a></li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Traditional Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/add-device" alt="New Device Instructions">Add a New Device</a></li>
+<li  data-localize="guide-navigation"><a href="/manage-devices" alt="Device Management Instructions">My Settings &amp; Devices</a></li>
+<li  data-localize="guide-navigation"><a href="/software-update" alt="Software Update Instructions">Software Update</a></li>
+<li  data-localize="guide-navigation"><a href="/device-health" alt="Duo Device Health Instructions">Duo Device Health</a></li>
+<li  data-localize="guide-navigation"><a href="/passwordless" alt="Duo Passwordless Instructions">Duo Passwordless</a></li>
+<li class="nav-header" alt="Duo Mobile Guides" data-localize="guide-navigation">Duo Mobile</li>
+<li  data-localize="guide-navigation"><a href="/iphone" alt="Duo Mobile iOS Instructions">iOS</a></li>
+<li  data-localize="guide-navigation"><a href="/apple-watch" alt="Duo Mobile and Apple Watch Instructions">Apple Watch</a></li>
+<li  data-localize="guide-navigation"><a href="/android" alt="Duo Mobile Android Instructions">Android</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-restore" alt="Duo Restore Instructions">Duo Restore</a></li>
+<li class="nav-header" alt="Guides for Other Devices" data-localize="guide-navigation">Other Devices</li>
+<li class="active" data-localize="guide-navigation"><a href="/other-phones" alt="Instructions for Cell Phones and Landlines">Cell Phones &amp; Landlines</a></li>
+<li  data-localize="guide-navigation"><a href="/tokens" alt="Hardware Token Instructions">Hardware Tokens</a></li>
+<li  data-localize="guide-navigation"><a href="/security-keys" alt="Security Key Instructions">Security Keys</a></li>
+<li  data-localize="guide-navigation"><a href="/touch-id" alt="Touch ID Instructions">Touch ID</a></li>
+<li class="nav-header" alt="Duo Authentication Guides" data-localize="guide-navigation">Authenticating</li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/append-mode" alt="Append Mode Instructions">Append Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/auto-mode" alt="Auto Mode Instructions">Auto Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/challenge-mode" alt="Challenge Mode Instructions">Challenge Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-sso" alt="Duo Single Sign-On Instructions">Duo Single Sign-On</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-central" alt="Duo Central Instructions">Duo Central</a></li>
+<li  data-localize="guide-navigation"><a href="/dag-launcher" alt="Duo Access Gateway Launcher Instructions">Duo Access Gateway Launcher</a></li>
+<li  data-localize="guide-navigation"><a href="/duoconnect" alt="DuoConnect Instructions">DuoConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-unix" alt="Duo Unix Instructions">Duo Unix</a></li>
+<li  data-localize="guide-navigation"><a href="/rdp" alt="Microsoft Windows Logon Instructions">Microsoft Windows Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/macos" alt="macOS Logon Instructions">macOS Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/lastpass" alt="LastPass Instructions">LastPass</a></li>
+<li  data-localize="guide-navigation"><a href="/anyconnect" alt="Cisco AnyConnect Instructions">Cisco AnyConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/vmwareview" alt="VMware View Instructions">VMware View</a></li>
+<li  data-localize="guide-navigation"><a href="/pulse" alt="Pulse VPN Client Instructions">Pulse VPN Client</a></li>
+<li  data-localize="guide-navigation"><a href="/receiver" alt="Citrix Receiver Instructions">Citrix Receiver</a></li>
+<li class="nav-header" alt="Other Guides" data-localize="guide-navigation">Other</li>
+<li  data-localize="guide-navigation"><a href="/third-party-accounts" alt="Instructions for Third-Party Accounts">Third-Party Accounts</a></li>
+<li  data-localize="guide-navigation"><a href="/common-issues" alt="Common Issues Page">Common Issues</a></li>
+<li data-localize="guide-navigation"><a href="https://help.duo.com" alt="Visit the Duo Knowledge Base at help.duo.com">Duo Knowledge Base</a></li>
+<li data-localize="guide-navigation"><a href="https://duo.com" alt="Visit the main Duo Security site">Visit duo.com</a></li>
+</ul>
+</div> <!-- .span3 -->
+<div class="span8">
+<div id="content">
+<div class="guide-article">
+
+<p data-localize="guide-other-phones">
+<table data-localize="guide-other-phones">
+<tr style="background-color:whitesmoke">
+<td style="border-left: 5px solid lightgray;border-top:0px;border-bottom:0px;border-right:0px;vertical-align:middle;text-align:left;font-size: 15px;font-weight: 500;line-height: 24px">Has your organization enabled the new Universal Prompt experience? See the <a href="/universal-prompt" alt="Universal Prompt Guide">Universal Prompt guide</a> for more information and instructions.</td>
+<td style="border:0px;vertical-align:top;text-align:center;width:200px"><a href="/universal-prompt" alt="Universal Prompt Guide"><img width="150" src="/static/images/en/up-push-prompt_2x.png" alt="Duo Push in Universal Prompt"></a></td>
+</tr>
+</table></p>
+<h1 data-localize="guide-other-phones">Using Duo With Any Cell Phone or Landline</h1>
+<p class="lead">Duo works with all cell phones and landlines by supporting authentication via phone call and SMS passcodes.</p>
+<h2 id="phone-call" data-localize="guide-other-phones">Phone Call</h2>
+<p data-localize="guide-other-phones">Click the <b>Call Me</b> button on the Duo Prompt (or type "phone" in the "second password" field if you don't see Duo's interactive prompt) and Duo will call your phone. The status bar at the bottom of the Duo Prompt updates at each step of the process.</p>
+<p data-localize="guide-other-phones"><img src="/static/images/en/calling-your-phone_2x.png" width="620" class="border" alt="Begin Phone Call Authentication"></p>
+<p data-localize="guide-other-phones">Answer the call and listen to the instructions to authenticate. The Duo Prompt's status bar also tells you how to approve the request over the phone.</p>
+<p data-localize="guide-other-phones"><img src="/static/images/en/phone_answered_2x.png" width="620" class="border" alt="Phone Call Authentication Instructions in Duo Prompt"></p>
+<hr class="dots">
+<h2 id="sms-passcodes" data-localize="guide-other-phones">SMS Passcodes</h2>
+<p data-localize="guide-other-phones">You can authenticate using a passcode texted to your phone. To have Duo text you a batch of passcodes click the <b>Text me new codes</b> button after clicking <b>Enter a Passcode</b> (or type "sms" in the "second password" field).</p>
+<p data-localize="guide-other-phones"><img src="/static/images/en/sending-passcodes_2x.png" width="620" class="border" alt="Request SMS Passcodes in Duo Prompt"></p>
+<p data-localize="guide-other-phones">The Duo Prompt's status bar indicates the passcodes were sent to your phone. The number of SMS passcodes sent in one batch is defined by your administrator (ten maximum). Sending multiple passcodes at once lets you use those passcodes to authenticate multiple times when you may not have cellular service.</p>
+<p data-localize="guide-other-phones"><img src="/static/images/en/send-a-passcode_2x.png" width="620" class="border" alt="Passcodes Sent Message"></p>
+<p data-localize="guide-other-phones"> To authenticate using an SMS passcode, click the <b>Enter a Passcode</b> button, type in a passcode you received from Duo via text message, and click <b>Log In</b>.
+<p data-localize="guide-other-phones"><img src="/static/images/en/authprompt-passcode_2x.png" width="620" class="border" alt="Enter Passcode in Duo Prompt"></p>
+<p data-localize="guide-other-phones"><p data-localize="guide-other-phones">Duo keeps track of which SMS passcodes you've already used in your batch, letting you know which one to use next.</p>
+<p data-localize="guide-other-phones"><img src="/static/images/en/using-a-passcode_2x.png" width="620" class="border" alt="Next Passcode Hint Text"></p>
+<p data-localize="guide-other-phones">You can have new passcodes sent to you at any time. A new batch of passcodes will invalidate all old passcodes, so it's probably best to delete the old message when a new one comes in.</p>
+
+<div class="visible-phone jump-container">
+<a href="#top" class="jump">Jump to top</a>
+</div>
+</div>
+</div>
+</div> <!-- .span8 -->
+</div> <!-- .row -->
+</div> <!-- .container -->
+<script src="/static/js/jquery.js?20220901t191231.446159586307807584"></script>
+<script src="/static/js/guide.js?20220901t191231.446159586307807584"></script>
+<button onclick="topFunction()" id="topButton" title="Return to top">Top</button>
+<script type="text/javascript">
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("topButton").style.display = "block";
+} else {
+document.getElementById("topButton").style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-20141016-1', 'auto', {'allowLinker': true});
+ga('require', 'linker');
+ga('linker:autoLink', ['duo.com'] );
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+<!-- Marketo -->
+<script>
+$.ajax({
+url: document.location.protocol + '//munchkin.marketo.net/munchkin.js',
+dataType: 'script',
+cache: true,
+success: function() {
+Munchkin.init('074-UQX-410');
+}
+});
+</script>
+<!-- End Marketo -->
+<!-- LocalizeJS script -->
+<script src="https://cdn.localizejs.com/localize.js"></script>
+<script>!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","detectLanguage","getAvailableLanguages","untranslatePage","bootstrap","prefetch","on","off"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);</script>
+<script>
+Localize.initialize({
+key: 'Nj09ZGcmRJDwn',
+rememberLanguage: true,
+allowInlineBreakTags: true
+});
+</script>
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="https://www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+</body>
+</html>

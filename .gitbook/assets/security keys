@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Using Security Keys with Duo - Guide to Two-Factor Authentication &middot; Duo Security</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="iO8cWATBThKq8w53dpo9NdHOoAWSYP_CBJojpsmE7MM" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="/static/css/bootstrap.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/bootstrap-responsive.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/guide.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="//cloud.webtype.com/css/e3348ae0-a196-45c6-8abf-8157c8d62fd8.css">
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="//www.cisco.com/c/dam/cdc/t/ctm-core.js"></script>
+
+</head>
+<body>
+<div class="navbar" id="top">
+<div class="navbar-inner">
+<div class="container">
+<a href="https://duo.com" alt="duo.com Main Site"><img src="/static/images/duo-security.png" id="logo" alt="Duo Security Logo"></a>
+<a class="brand" href="/">Guide to Two-Factor Authentication</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="visible-phone toggle-nav-container">
+<a href="#nav" class="toggle-nav">Show/hide navigation</a>
+</div>
+<ul class="nav nav-list">
+<li  data-localize="guide-navigation"><a href="/" alt="Guide Home Page">Home</a></li>
+<li  data-localize="guide-navigation"><a href="/enrollment" alt="Duo Enrollment Instructions">Enrollment</a></li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Traditional Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/add-device" alt="New Device Instructions">Add a New Device</a></li>
+<li  data-localize="guide-navigation"><a href="/manage-devices" alt="Device Management Instructions">My Settings &amp; Devices</a></li>
+<li  data-localize="guide-navigation"><a href="/software-update" alt="Software Update Instructions">Software Update</a></li>
+<li  data-localize="guide-navigation"><a href="/device-health" alt="Duo Device Health Instructions">Duo Device Health</a></li>
+<li  data-localize="guide-navigation"><a href="/passwordless" alt="Duo Passwordless Instructions">Duo Passwordless</a></li>
+<li class="nav-header" alt="Duo Mobile Guides" data-localize="guide-navigation">Duo Mobile</li>
+<li  data-localize="guide-navigation"><a href="/iphone" alt="Duo Mobile iOS Instructions">iOS</a></li>
+<li  data-localize="guide-navigation"><a href="/apple-watch" alt="Duo Mobile and Apple Watch Instructions">Apple Watch</a></li>
+<li  data-localize="guide-navigation"><a href="/android" alt="Duo Mobile Android Instructions">Android</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-restore" alt="Duo Restore Instructions">Duo Restore</a></li>
+<li class="nav-header" alt="Guides for Other Devices" data-localize="guide-navigation">Other Devices</li>
+<li  data-localize="guide-navigation"><a href="/other-phones" alt="Instructions for Cell Phones and Landlines">Cell Phones &amp; Landlines</a></li>
+<li  data-localize="guide-navigation"><a href="/tokens" alt="Hardware Token Instructions">Hardware Tokens</a></li>
+<li class="active" data-localize="guide-navigation"><a href="/security-keys" alt="Security Key Instructions">Security Keys</a></li>
+<li  data-localize="guide-navigation"><a href="/touch-id" alt="Touch ID Instructions">Touch ID</a></li>
+<li class="nav-header" alt="Duo Authentication Guides" data-localize="guide-navigation">Authenticating</li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/append-mode" alt="Append Mode Instructions">Append Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/auto-mode" alt="Auto Mode Instructions">Auto Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/challenge-mode" alt="Challenge Mode Instructions">Challenge Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-sso" alt="Duo Single Sign-On Instructions">Duo Single Sign-On</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-central" alt="Duo Central Instructions">Duo Central</a></li>
+<li  data-localize="guide-navigation"><a href="/dag-launcher" alt="Duo Access Gateway Launcher Instructions">Duo Access Gateway Launcher</a></li>
+<li  data-localize="guide-navigation"><a href="/duoconnect" alt="DuoConnect Instructions">DuoConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-unix" alt="Duo Unix Instructions">Duo Unix</a></li>
+<li  data-localize="guide-navigation"><a href="/rdp" alt="Microsoft Windows Logon Instructions">Microsoft Windows Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/macos" alt="macOS Logon Instructions">macOS Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/lastpass" alt="LastPass Instructions">LastPass</a></li>
+<li  data-localize="guide-navigation"><a href="/anyconnect" alt="Cisco AnyConnect Instructions">Cisco AnyConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/vmwareview" alt="VMware View Instructions">VMware View</a></li>
+<li  data-localize="guide-navigation"><a href="/pulse" alt="Pulse VPN Client Instructions">Pulse VPN Client</a></li>
+<li  data-localize="guide-navigation"><a href="/receiver" alt="Citrix Receiver Instructions">Citrix Receiver</a></li>
+<li class="nav-header" alt="Other Guides" data-localize="guide-navigation">Other</li>
+<li  data-localize="guide-navigation"><a href="/third-party-accounts" alt="Instructions for Third-Party Accounts">Third-Party Accounts</a></li>
+<li  data-localize="guide-navigation"><a href="/common-issues" alt="Common Issues Page">Common Issues</a></li>
+<li data-localize="guide-navigation"><a href="https://help.duo.com" alt="Visit the Duo Knowledge Base at help.duo.com">Duo Knowledge Base</a></li>
+<li data-localize="guide-navigation"><a href="https://duo.com" alt="Visit the main Duo Security site">Visit duo.com</a></li>
+</ul>
+</div> <!-- .span3 -->
+<div class="span8">
+<div id="content">
+<div class="guide-article">
+
+<p data-localize="guide-security-keys">
+<table data-localize="guide-security-keys">
+<tr style="background-color:whitesmoke">
+<td style="border-left: 5px solid lightgray;border-top:0px;border-bottom:0px;border-right:0px;vertical-align:middle;text-align:left;font-size: 15px;font-weight: 500;line-height: 24px">Has your organization enabled the new Universal Prompt experience? See the <a href="/universal-prompt" alt="Universal Prompt Guide">Universal Prompt guide</a> for more information and instructions.</td>
+<td style="border:0px;vertical-align:top;text-align:center;width:200px"><a href="/universal-prompt" alt="Universal Prompt Guide"><img width="150" src="/static/images/en/up-push-prompt_2x.png" alt="Duo Push in Universal Prompt"></a></td>
+</tr>
+</table></p>
+<h1 data-localize="guide-security-keys">Security Keys and Duo</h1>
+<p class="lead" data-localize="guide-security-keys">Our two-factor authentication platform supports security keys, offering secure login approvals resistant to <a href="http://www.webopedia.com/TERM/P/phishing.html">phishing</a> attacks combined with the one-tap convenience you're already used to with <a href="https://duo.com/duo-push">Duo Push</a>.</p>
+<div id="toc_container" data-localize="guide-security-keys">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+<li><a href="#security-key-defined">What are Security Keys?</a></li>
+<li><a href="#security-key-requirements">Security Key Requirements</a></li>
+<li><a href="#security-key-enroll">Enrolling your Security Key</a></li>
+<ul class="toc_list">
+<li><a href="#security-key-enrollment">Initial Enrollment with a Security Key</a></li>
+<li><a href="#security-key-ssp">Adding a Security Key From the Duo Prompt</a></li>
+</ul>
+<li><a href="#security-key-auth">Authenticating with a Security Key</a></li>
+</ul>
+</div>
+<h2 id="security-key-defined" data-localize="guide-security-keys">What are Security Keys?</h2>
+<p data-localize="guide-security-keys">A security key plugs into your USB port and when tapped or when the button is pressed it sends a signed response back to Duo to validate your login. Duo uses the <a href="https://en.wikipedia.org/wiki/WebAuthn" alt="Wikipedia Entry for WebAuthn" target="_blank" rel="noopener noreferrer">WebAuthn</a> authentication standards to interact with your security keys. You may also see WebAuthn referred to as "FIDO2".</p>
+<h2 id="security-key-requirements" data-localize="guide-security-keys">Security Key Requirements</h2>
+<p data-localize="guide-security-keys">In order to use a security key with Duo, make sure you have the following:</p>
+<p data-localize="guide-security-keys"><ul data-localize="guide-security-keys">
+<li>A supported browser (<a href="https://www.google.com/chrome/browser/" alt="Chrome Browser Site" target="_blank" rel="noopener noreferrer">Chrome 70</a>, <a href="https://www.mozilla.org/en-US/firefox/" alt="Firefox Browser Site" target="_blank" rel="noopener noreferrer">Firefox 60</a>, <a href="https://www.apple.com/safari/" alt="Safari Browser Site" target="_blank" rel="noopener noreferrer">Safari 13</a> or later), or <a href="https://www.microsoft.com/edge" alt="Edge Browser Site" target="_blank" rel="noopener noreferrer">Microsoft Edge</a> 79 or later. Support for authentication is limited to web applications that show <a href="/prompt">Duo's inline browser prompt</a>.
+<li>An available USB port.</li>
+<li>A supported USB security key. WebAuthn/FIDO2 security keys from <a href="https://www.yubico.com/solutions/fido2/Yubico" alt="Link to Yubico site" target="_blank" rel="noopener noreferrer">Yubico</a> or <a href="https://www.ftsafe.com/Products/FIDO2" alt="Link to Feitian Site" target="_blank" rel="noopener noreferrer">Feitian</a> are good options. We do not support U2F-only security keys (like the Yubikey NEO-n).</li>
+</ul>
+<p data-localize="guide-security-keys">Additionally, your administrator must enable the use of security keys in Duo. Check with your organization's support team or help desk to verify that security keys are allowed if you are uncertain.</p>
+<h1 id="security-key-enroll" data-localize="guide-security-keys">Enrolling your Security Key</h1>
+<p data-localize="guide-security-keys">You can enroll your security key during the initial <a href="/enrollment">self-enrollment process</a> or, if you have already enrolled in Duo using a different device (like your mobile phone), you can add your security key as an additional authentication device from the <a href="/manage-devices">device management portal</a>.</p>
+<h2 id="security-key-enrollment" data-localize="guide-security-keys">Initial Enrollment with a Security Key</h2>
+<p data-localize="guide-security-keys">Access the Duo enrollment page via a link emailed by your administrator, or when you log in for the first time to a Duo protected resource. Select <strong>Security Key</strong> from the list of devices and then click <strong>Continue</strong>.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-enroll-select_2x.png" alt="Security Key Selection in Duo Prompt"></p>
+<p data-localize="guide-security-keys">Make sure that you're not blocking pop-up windows for the enrollment site before continuing.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-enroll-prompt_2x.png" alt="Security Key Enrollment"></p>
+<p data-localize="guide-security-keys">If you're using Safari 14.1 or later, click the <strong>Initiate enrollment</strong> button to proceed. Other browsers do not require this step.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-safari-enroll_2x.png" alt="Safari Security Key Initiation"></p>
+<p data-localize="guide-security-keys">The security key enrollment window automatically tries to locate your connected security key for approval.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-enroll-prompt2_2x.png" alt="Security Key Prompt"></p>
+<p data-localize="guide-security-keys">Depending on your security key model, you'll need to tap, insert, or press a button on your device to proceed.</p>
+<p data-localize="guide-security-keys"><img src="/static/images/security-key-finger.jpg" width= "320" alt="Photo of finger about to tap a security key"></p>
+<p data-localize="guide-security-keys">When enrolling your security key, you'll be prompted to tap to enroll your security key (possibly more than once). You may also be asked if you want to allow Duo to access information about your security key (click <b>Allow</b> or <b>Proceed</b> as applicable).</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-enroll-prompt3_2x.png" alt="Browser Prompt for Security Key"></p>
+<p data-localize="guide-security-keys">You'll see whether the security key identification was successful or not.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-enroll-prompt-success_2x.png" alt="Security Key Enrollment Success"></p>
+<p data-localize="guide-security-keys">Congratulations! You have enrolled your security key.
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-enroll-done_2x.png" alt="Security Key Added"></p>
+<h2 id="security-key-ssp" data-localize="guide-security-keys">Adding a Security Key From the Duo Prompt</h2>
+<p data-localize="guide-security-keys">If you previously enrolled other devices in Duo, you can easily add your new security key as an additional authenticator as long as your administrator has enabled Duo's self-service portal.</p>
+<p data-localize="guide-security-keys">Navigate to your Duo-protected service and log in. At the Duo Prompt you'll see an <strong>Add a new device</strong> link on the left. Click it and approve the Duo login request using your already enrolled phone or other device.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-enroll-ssp_2x.png" alt="Add a New Device Link"></p>
+<p data-localize="guide-security-keys">Proceed with the security key enrollment process as shown above in <a href="#security-key-enrollment">Initial Enrollment with a Security Key</a>.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-enroll-select_2x.png" alt="Security Key Selection in Duo Prompt"></p>
+<p data-localize="guide-security-keys">You've added your security key (in this example, a security key from Yubico)! It is listed with your other enrolled devices.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-enroll-ssp-done_2x.png" alt="Security Key Added"></p>
+<h1 id="security-key-auth" data-localize="guide-security-keys">Authenticating with a Security Key</h1>
+<p data-localize="guide-security-keys">The next time you log on using Duo, select your security key from the drop-down list of your authentication devices.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-choose-factor_2x.png" alt="YubiKey Security Key Selection in Duo Prompt"></p>
+<p data-localize="guide-security-keys">Once you select your security key from the list, click <b>Use Security Key</b>.
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-start-auth_2x.png" alt="Begin Security Key Authentication"></p>
+<p data-localize="guide-security-keys">If you're using Safari 14.1 or later, click the <strong>Initiate authentication</strong> button to proceed. Other browsers do not require this step.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-safari-auth_2x.png" alt="Safari Security Key Initiation"></p>
+<p data-localize="guide-security-keys">Insert your security key if it's not already connected, and then tap your security key when prompted. Some types of keys flash as a prompt for you to authenticate.</p>
+<p data-localize="guide-security-keys"><img width="620" src="/static/images/en/security-key-auth-firefox_2x.png" alt="Security Key Prompt"></p>
+<div class="scroll-spacer"></div>
+
+<div class="visible-phone jump-container">
+<a href="#top" class="jump">Jump to top</a>
+</div>
+</div>
+</div>
+</div> <!-- .span8 -->
+</div> <!-- .row -->
+</div> <!-- .container -->
+<script src="/static/js/jquery.js?20220901t191231.446159586307807584"></script>
+<script src="/static/js/guide.js?20220901t191231.446159586307807584"></script>
+<button onclick="topFunction()" id="topButton" title="Return to top">Top</button>
+<script type="text/javascript">
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("topButton").style.display = "block";
+} else {
+document.getElementById("topButton").style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-20141016-1', 'auto', {'allowLinker': true});
+ga('require', 'linker');
+ga('linker:autoLink', ['duo.com'] );
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+<!-- Marketo -->
+<script>
+$.ajax({
+url: document.location.protocol + '//munchkin.marketo.net/munchkin.js',
+dataType: 'script',
+cache: true,
+success: function() {
+Munchkin.init('074-UQX-410');
+}
+});
+</script>
+<!-- End Marketo -->
+<!-- LocalizeJS script -->
+<script src="https://cdn.localizejs.com/localize.js"></script>
+<script>!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","detectLanguage","getAvailableLanguages","untranslatePage","bootstrap","prefetch","on","off"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);</script>
+<script>
+Localize.initialize({
+key: 'Nj09ZGcmRJDwn',
+rememberLanguage: true,
+allowInlineBreakTags: true
+});
+</script>
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="https://www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+</body>
+</html>

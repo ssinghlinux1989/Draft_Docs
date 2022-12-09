@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Duo Mobile on iOS - Guide to Two-Factor Authentication &middot; Duo Security</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="iO8cWATBThKq8w53dpo9NdHOoAWSYP_CBJojpsmE7MM" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="/static/css/bootstrap.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/bootstrap-responsive.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/guide.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="//cloud.webtype.com/css/e3348ae0-a196-45c6-8abf-8157c8d62fd8.css">
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="//www.cisco.com/c/dam/cdc/t/ctm-core.js"></script>
+
+</head>
+<body>
+<div class="navbar" id="top">
+<div class="navbar-inner">
+<div class="container">
+<a href="https://duo.com" alt="duo.com Main Site"><img src="/static/images/duo-security.png" id="logo" alt="Duo Security Logo"></a>
+<a class="brand" href="/">Guide to Two-Factor Authentication</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="visible-phone toggle-nav-container">
+<a href="#nav" class="toggle-nav">Show/hide navigation</a>
+</div>
+<ul class="nav nav-list">
+<li  data-localize="guide-navigation"><a href="/" alt="Guide Home Page">Home</a></li>
+<li  data-localize="guide-navigation"><a href="/enrollment" alt="Duo Enrollment Instructions">Enrollment</a></li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Traditional Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/add-device" alt="New Device Instructions">Add a New Device</a></li>
+<li  data-localize="guide-navigation"><a href="/manage-devices" alt="Device Management Instructions">My Settings &amp; Devices</a></li>
+<li  data-localize="guide-navigation"><a href="/software-update" alt="Software Update Instructions">Software Update</a></li>
+<li  data-localize="guide-navigation"><a href="/device-health" alt="Duo Device Health Instructions">Duo Device Health</a></li>
+<li  data-localize="guide-navigation"><a href="/passwordless" alt="Duo Passwordless Instructions">Duo Passwordless</a></li>
+<li class="nav-header" alt="Duo Mobile Guides" data-localize="guide-navigation">Duo Mobile</li>
+<li class="active" data-localize="guide-navigation"><a href="/iphone" alt="Duo Mobile iOS Instructions">iOS</a></li>
+<li  data-localize="guide-navigation"><a href="/apple-watch" alt="Duo Mobile and Apple Watch Instructions">Apple Watch</a></li>
+<li  data-localize="guide-navigation"><a href="/android" alt="Duo Mobile Android Instructions">Android</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-restore" alt="Duo Restore Instructions">Duo Restore</a></li>
+<li class="nav-header" alt="Guides for Other Devices" data-localize="guide-navigation">Other Devices</li>
+<li  data-localize="guide-navigation"><a href="/other-phones" alt="Instructions for Cell Phones and Landlines">Cell Phones &amp; Landlines</a></li>
+<li  data-localize="guide-navigation"><a href="/tokens" alt="Hardware Token Instructions">Hardware Tokens</a></li>
+<li  data-localize="guide-navigation"><a href="/security-keys" alt="Security Key Instructions">Security Keys</a></li>
+<li  data-localize="guide-navigation"><a href="/touch-id" alt="Touch ID Instructions">Touch ID</a></li>
+<li class="nav-header" alt="Duo Authentication Guides" data-localize="guide-navigation">Authenticating</li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/append-mode" alt="Append Mode Instructions">Append Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/auto-mode" alt="Auto Mode Instructions">Auto Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/challenge-mode" alt="Challenge Mode Instructions">Challenge Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-sso" alt="Duo Single Sign-On Instructions">Duo Single Sign-On</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-central" alt="Duo Central Instructions">Duo Central</a></li>
+<li  data-localize="guide-navigation"><a href="/dag-launcher" alt="Duo Access Gateway Launcher Instructions">Duo Access Gateway Launcher</a></li>
+<li  data-localize="guide-navigation"><a href="/duoconnect" alt="DuoConnect Instructions">DuoConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-unix" alt="Duo Unix Instructions">Duo Unix</a></li>
+<li  data-localize="guide-navigation"><a href="/rdp" alt="Microsoft Windows Logon Instructions">Microsoft Windows Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/macos" alt="macOS Logon Instructions">macOS Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/lastpass" alt="LastPass Instructions">LastPass</a></li>
+<li  data-localize="guide-navigation"><a href="/anyconnect" alt="Cisco AnyConnect Instructions">Cisco AnyConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/vmwareview" alt="VMware View Instructions">VMware View</a></li>
+<li  data-localize="guide-navigation"><a href="/pulse" alt="Pulse VPN Client Instructions">Pulse VPN Client</a></li>
+<li  data-localize="guide-navigation"><a href="/receiver" alt="Citrix Receiver Instructions">Citrix Receiver</a></li>
+<li class="nav-header" alt="Other Guides" data-localize="guide-navigation">Other</li>
+<li  data-localize="guide-navigation"><a href="/third-party-accounts" alt="Instructions for Third-Party Accounts">Third-Party Accounts</a></li>
+<li  data-localize="guide-navigation"><a href="/common-issues" alt="Common Issues Page">Common Issues</a></li>
+<li data-localize="guide-navigation"><a href="https://help.duo.com" alt="Visit the Duo Knowledge Base at help.duo.com">Duo Knowledge Base</a></li>
+<li data-localize="guide-navigation"><a href="https://duo.com" alt="Visit the main Duo Security site">Visit duo.com</a></li>
+</ul>
+</div> <!-- .span3 -->
+<div class="span8">
+<div id="content">
+<div class="guide-article">
+
+<h1 data-localize="guide-iphone">Duo Mobile on iOS</h1>
+<p data-localize="guide-iphone">
+<table data-localize="guide-iphone">
+<tr style="background-color:whitesmoke">
+<td style="border-left: 5px solid lightgray;border-top:0px;border-bottom:0px;border-right:0px;vertical-align:middle;text-align:left;font-size: 15px;font-weight: 500;line-height: 24px">Duo Mobile version 4 was released on October 11, 2021.<br />
+<br />
+Duo Mobile version 3 information remains available for users on older iOS versions who can't upgrade to the latest Duo Mobile release.<br />
+<br />
+<a href="/iphone-v3" alt="Duo Mobile v3 iOS Guide">View the Duo Mobile v3 iOS Guide</a></td>
+<td style="border:0px;vertical-align:top;text-align:center;width:200px"><img width="150" src="/static/images/en/ios-duo-push_2x.png" alt="Duo Mobile v4 Push Prompt"></a></td>
+</tr>
+</table></p>
+<p class="lead" data-localize="guide-iphone">The Duo Mobile application makes it easy to authenticate &mdash; just tap &ldquo;Approve&rdquo; on the login request sent to your iPhone. You can also quickly generate login passcodes, even without an internet connection or cell service.</p>
+<p class="info" data-localize="guide-iphone">If you need assistance installing or using Duo Mobile, please contact your organization's IT Help Desk or Duo administrator.</p>
+<div id="toc_container" data-localize="guide-iphone">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+<li><a href="#duo-mobile-changes">Changes to Duo Mobile</a></li>
+<li><a href="#duo-mobile-install">Install Duo Mobile</a></li>
+<li><a href="#enroll">Activate Duo Mobile for the First Time</a></li>
+<li><a href="#push">Duo Push</a></li>
+<ul class="toc_list">
+<li><a href="#notifications">Duo Push and Notifications</a></li>
+<li><a href="#faceid">Face ID and Touch ID</a></li>
+<li><a href="#verified-push">Duo Verified Push</a></li>
+</ul>
+<li><a href="#apple-watch">Apple Watch</a></li>
+<li><a href="#passcodes">Passcodes</a></li>
+<li><a href="#add-account">Add More Accounts to Duo Mobile</a></li>
+<li><a href="#account-search">Duo Mobile Account Search</a></li>
+<li><a href="#security-checkup">Security Checkup</a></li>
+<li><a href="#third-party-accounts">Third-Party Accounts</a></li>
+<li><a href="#edit-account">Edit Accounts</a></li>
+<li><a href="#backup-restore">Backup & Restore</a></li>
+<li><a href="#appearance">Duo Mobile Appearance</a></li>
+<ul class="toc_list">
+<li><a href="#adaptive-view">Adaptive View</a></li>
+<li><a href="#dark-mode">Dark Mode</a></li>
+</ul>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+<ul class="toc_list">
+<li><a href="#push-troubleshooting">Push Troubleshooting</a></li>
+</ul>
+</ul>
+</div>
+<h2 id="duo-mobile-changes" data-localize="guide-iphone">Changes to Duo Mobile</h2>
+<p data-localize="guide-iphone"> We've redesigned Duo Mobile to give you an updated login experience. Learn more about what's new to Duo Mobile version 4 in this video walkthrough:</p>
+<p data-localize="guide-iphone"><script src="https://fast.wistia.com/embed/medias/ixe0g5bo4i.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ixe0g5bo4i videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/ixe0g5bo4i/swatch" alt="Duo Mobile 4 for iOS Video" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+</p>
+<hr class="dots">
+<h2 id="duo-mobile-install" data-localize="guide-iphone">Install Duo Mobile</h2>
+<p data-localize="guide-iphone">Find the latest version of Duo Mobile in the <a href="https://itunes.apple.com/us/app/duo-mobile/id422663827?mt=8" alt="Duo Mobile in the App Store" target="_blank" rel="noopener noreferrer">App Store</a>.
+<p data-localize="guide-iphone"><b>Supported Platforms:</b> The current version of Duo Mobile supports iOS 13.0 and greater.</p>
+<p data-localize="guide-iphone">To see which version of Duo Mobile is installed on your device, open Duo Mobile and tap the menu icon. The app version will be displayed in the bottom left corner.</p>
+<hr class="dots">
+<h2 id="enroll" data-localize="guide-iphone">Activate Duo Mobile for the First Time</h2>
+<p data-localize="guide-iphone">When you <a href="/enrollment" alt="Duo Enrollment">enroll in Duo for the first time</a> and choose to add an iOS device or use Duo Push, you're shown a QR code to scan with the Duo Mobile app to complete activation.</p>
+<p data-localize="guide-iphone"><img width="620" src="/static/images/en/enrollment-activate_2x.png" alt="Scan QR Code to Activate"></p>
+<p data-localize="guide-iphone">Launch Duo Mobile and step through the introduction screens.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-welcome_2x.png" alt="Duo Mobile First-Time Launch" width="300"></p>
+<p data-localize="guide-iphone">To proceed with adding your initial Duo account to Duo Mobile, tap <b>Use a QR code</b>.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-add-first-account_2x.png" alt="Add Account with QR Code" width="300"></p>
+<p data-localize="guide-iphone">Use your camera to scan the QR code shown by Duo Enrollment in your browser. If you're prompted to allow Duo Mobile permission to use your device camera, please grant it.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-duo-activation_2x.png" alt="Scan Duo QR Code" width="300">
+<p data-localize="guide-iphone">Give the new account a name to complete adding it to Duo Mobile.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-name-account_2x.png" alt="Name the New Duo Account" width="300">
+<p data-localize="guide-iphone">It's a good idea to take a few minutes to practice approving and denying Duo authentication requests if you haven't used Duo before. Tap <b>Practice now</b> to go through some training screens like this one. If you feel comfortable using Duo Mobile to log in to applications you can tap <b>Skip</b>.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-practice_2x.png" alt="Duo Mobile Practice" width="300">
+<p data-localize="guide-iphone">Respond to Duo Mobile even faster by enabling notifications. You'll see new Duo Push requests when they arrive at your device, and can approve or deny from the notification without opening the app. Tap <b>Allow notifications</b> to permit notifications from Duo Mobile in iOS settings.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-allow-notifications_2x.png" alt="Enable Duo Mobile Notifications" width="300">
+<p data-localize="guide-iphone">Return to the accounts list to exit the new account process.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-activation-done_2x.png" alt="Duo Mobile Activation Done" width="300">
+<p data-localize="guide-iphone">You'll see your newly-added Duo account in the accounts list. Now you're able to respond to Duo Push authentication requests, or generate passcodes to log in to applications.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-accounts-list_2x.png" alt="Duo Mobile Account List" width="300">
+<hr class="dots">
+<h2 id="push" data-localize="guide-iphone">Duo Push</h2>
+<p data-localize="guide-iphone">If you choose to authenticate with Duo Push, you'll get a login request sent to your phone &mdash; just press <b>Approve</b> to authenticate.
+</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-duo-push_2x.png" width="300" class="border" alt="Duo Push Request on iOS"></p>
+<p data-localize="guide-iphone">If you get a login request that you weren't expecting, press <b>Deny</b> to reject the request. You’ll be asked if this was a suspicious login. If you aren't trying to log into an application or service protected by Duo and don't recognize the request, tap <b>Yes</b> to notify your organization's Duo administrator. If you made a mistake or the login isn't suspicious, tap <b>No</b> to deny the request without reporting it.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-deny-options_2x.png" alt="Duo Mobile Deny Options" width="300"></p>
+<hr class="dots">
+<h3 id="notifications" data-localize="guide-iphone">Duo Push and Notifications</h3>
+<p data-localize="guide-iphone">You can respond to Duo Push requests from the iOS lock screen or banner notification. The actions presented to you when you respond to the notification depend on your organization's Duo policy settings, such as whether or not you can approve the login request without PIN or biometric verification.</p>
+<p data-localize="guide-iphone">Perform a firm longpress on the Duo Mobile notification from the lock screen to reveal the "Approve" or "Deny" actions. Tap an action and supply your passcode or biometric verification (face or fingerprint) to complete the action.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-notification-locked_2x.png" width="300" class="border" alt="Duo Mobile Lockscreen Notification"></p>
+<p data-localize="guide-iphone">When your screen is unlocked, long-press or swipe down on the Duo Mobile banner notification received to reveal the authentication actions.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-notification-unlocked_2x.png" width="300" class="border" alt="Duo Mobile Banner Notification"></p>
+<p data-localize="guide-iphone">On devices that do not feature 3D Touch, swipe left on the Duo Mobile notification to reveal the actions.</p>
+<h3 id="faceid" data-localize="guide-iphone">Face ID and Touch ID</h3>
+<p data-localize="guide-iphone">Your organization may require biometric verification when you approve a Duo Push request. You can approve Duo authentication requests with Face ID if your device supports it.
+<p data-localize="guide-iphone">The first time you receive a Duo Push request on your iOS device which requires biometric verification, you'll be prompted to grant Face ID permission to the Duo Mobile app. Tap <b>OK</b> to proceed.</p>
+<p data-localize="guide-iphone">Scan your face in the same manner that you use to unlock your device to approve the Duo login request.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/iphone-faceid_2x.png" width="300" class="border" alt="Duo Mobile Face ID Prompt"></p>
+<p data-localize="guide-iphone">If your first try isn't successful, tap <b>Try Face ID Again</b> to scan your face again.</p>
+<p data-localize="guide-iphone">If you're not able to approve the login request with Face ID or if you did not grant Duo Mobile permission to use Face ID, you can approve the Duo authentication request using the device's passcode.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/iphone-passcode_2x.png" width="300" class="border" alt="Duo Mobile Face ID Retry Scan"></p>
+<p data-localize="guide-iphone">If you're using a Touch ID capable iOS device you can scan your fingerprint to approve Duo authentication requests.</p>
+<p data-localize="guide-iphone">If you're not able to scan your fingerprint using the Touch ID sensor you can also approve the Duo authentication request using the device's passcode.</p>
+<hr class="dots" />
+<h3 id="verified-push" data-localize="guide-iphone">Duo Verified Push</h2>
+<p data-localize="guide-iphone">Your organization may wish for you to enter a verification code shown within the Duo Universal Prompt into Duo Mobile when you approve a Duo Push request. This protects you from approving login requests not made by you and helps keep your accounts and information safe.</p>
+<p data-localize="guide-iphone">You will need Duo Mobile version 4.17.0 or later installed on iOS 13 or newer to verify a Duo Push request with a code.</p>
+<p data-localize="guide-iphone">If your organization requires Duo Push verification, Duo Universal Prompt displays a six-digit code on-screen when you choose to use Duo Push to log in to that application.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/universal-prompt-verification-code_2x.png" width="350" class="border" alt="Duo Push Verification Code in Duo Universal Prompt"></p>
+<p data-localize="guide-iphone">Enter the code shown on your screen into Duo Mobile and tap <b>Verify</b> to approve the login request.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/iphone-verify-push_2x.png" width="300" class="border" alt="Duo Push Verification Code Entry"></p>
+<p data-localize="guide-iphone">If you enter an incorrect code, tap <b>OK</b> on your phone, and return to the Duo Universal Prompt where you can click or tap <b>Other options</b> to choose a different way to log in or to try Duo Push again.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/iphone-verify-push-failed_2x.png" width="300" class="border" alt="Duo Push Verification Failed"></p>
+<p data-localize="guide-iphone">If you receive a Duo Push request on your phone and you aren't trying to log in to that application tap <b>I'm not logging in</b> to deny the request. You’ll be asked if this was a suspicious login. Tap <b>Yes</b> to notify your organization's Duo administrator or tap <b>No</b> if you made a mistake or the login isn't suspicious.</p>
+<hr class="dots" />
+<h2 id="apple-watch" data-localize="guide-iphone">Apple Watch</h2>
+<p data-localize="guide-iphone">See our <a href="/apple-watch">Apple Watch guide</a>.</p>
+<hr class="dots">
+<h2 id="passcodes" data-localize="guide-iphone">Passcodes</h2>
+<p data-localize="guide-iphone">Tap an account to get a one-time passcode for login. This works <i>anywhere</i>, even in places where you don't have an internet connection or can't get cell service.</p>
+<p data-localize="guide-iphone"> If the account is for a Duo-protected service or application (meaning you <a href="/enrollment#activate-duo-mobile">enrolled this device into Duo and activated the app for Duo Push</a>), then the passcode shown is valid until used. Tap <b>Refresh Passcode</b> to generate a new Duo passcode.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/iphone-passcodes_2x.png" alt="Duo Passcode Generation in Duo Mobile" width="300"></p>
+<p data-localize="guide-iphone"> If the account is a third-party OTP account (meaning you <a href="/third-party-accounts">logged into another service like Gmail and added this device as an authenticator app</a>), then you'll see a 30 second countdown indicator underneath the passcode. If you don't use that passcode before it expires then the account refreshes with a new passcode and the countdown begins again.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/iphone-thirdparty-passcodes_2x.png" alt="Third-Party Passcode Generation in Duo Mobile" width="300"></p>
+<p data-localize="guide-iphone">If you need to use the passcode shown in Duo Mobile in another mobile app tap <b>Copy</b> and paste it into the other app.</p>
+<hr class="dots">
+<h2 id="add-account" data-localize="guide-iphone">Add More Accounts to Duo Mobile</h2>
+<p data-localize="guide-iphone">To add additional accounts to Duo mobile, tap <b>Add</b> in the upper right of your accounts list to go to the account type selector.</p>
+<img src="/static/images/en/ios-account-types_2x.png" class="figure" width="300" alt="Duo Mobile Account Type Selector">
+<p data-localize="guide-iphone">If the new account you want to add shows you a QR code to scan with an authenticator app, tap <b>Use QR code</b> from the <b>Add account</b> list. Scan the QR code with your camera to add the account to Duo Mobile.</p>
+<img src="/static/images/en/ios-duo-activation_2x.png" class="figure" width="300" alt="Duo Mobile Account Activation">
+<p data-localize="guide-iphone">You can also choose the type of account you want to add from the list, and then choose to add that account by scanning a QR code or by entering an activation code you receive from that application. <a href="/third-party-accounts">Learn more about adding third-party accounts to Duo Mobile</a></p>
+<hr class="dots">
+<h2 id="account-search" data-localize="guide-iphone">Duo Mobile Account Search</h2>
+<p data-localize="guide-iphone">In Duo Mobile version 4.22 or later you may see an account search bar. We're making this feature available to all users gradually. Do not contact Duo Support or your organization's Duo administrator to request the search bar as they cannot enable it for you.</p>
+<p data-localize="guide-iphone">If you have three or more accounts on Duo Mobile, you may see an account search bar in the app. To search for an account, tap on the search bar at the top of the app to pull up your phone's keyboard and begin typing the account name. Any account name matching the search you typed in will appear underneath the search bar.</p>
+<img src="/static/images/en/ios-duo-search_2x.png" class="figure" width="300" alt="Duo Mobile Account Search on iPhone">
+<hr class="dots">
+<h2 id="security-checkup" data-localize="guide-iphone">Security Checkup</h2>
+<p data-localize="guide-iphone">Duo Mobile's Security Checkup verifies device settings against Duo's recommended security settings, and lets you know if any of your device's settings don't match.<p data-localize="guide-iphone">
+</p>For example, this iOS device doesn't have the latest OS update installed and doesn't have Touch ID or Face ID enabled:</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-security-checkup-bad_2x.png" alt="Duo Mobile Security Checkup - Issues Found" width="300"></p>
+<p data-localize="guide-iphone">Tap on any detected issue to learn more about that particular setting and how you can update your device with the recommended configuration.</p>
+<p data-localize="guide-iphone">This iOS device has up-to-date software and all of Duo's recommended security settings configured:</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-security-checkup-good_2x.png" alt="Duo Mobile Security Checkup - No Issues" width="300"></p>
+<p data-localize="guide-iphone">Tap the menu and go to <b> Security Checkup</b> in Duo Mobile to view your device's security status at any time.</p>
+<hr class="dots">
+<h2 id="third-party-accounts" data-localize="guide-iphone">Third-Party Accounts</h2>
+<!-- linked from video annotation; preserve original anchor if section title changes -->
+<p data-localize="guide-iphone">Duo Mobile supports passcode generation for logging in to third-party TOTP accounts, like Google and Dropbox. <b><a href="/third-party-accounts">Learn more &raquo;</a></b></p>
+<hr class="dots">
+<h2 id="edit-account" data-localize="guide-iphone">Edit Accounts</h2>
+<p data-localize="guide-iphone">To make changes to an account in your accounts list, tap the account to expand it, and then tap the three dots in the upper-right corner of the account card to bring up the account options.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-edit-account_2x.png" alt="Edit Account in Duo Mobile" width="300"></p>
+<p data-localize="guide-iphone">Tap <b>Move</b> to reorder your accounts list (shown when you have more than one account in Duo Mobile). Use the up or down arrows shown to the left of each account's name (or tap and hold the icon on the right side of the account card) to change an account's position in the list. Tap <b>Done</b> when you've finished reordering your accounts.</p>
+<p data-localize="guide-iphone">Tap <b>Rename</b> to change the name of an account. Enter a new name for the account and then tap <b>Save</b> to apply the new name.</p>
+<p data-localize="guide-iphone">Remove an account by tapping <b>Delete</b>. When you delete an account you can no longer use it to log in, and it's also removed from your Duo Mobile backup so you can't <a href="/duo-restore" alt="Duo Restore Guide">restore</a> it later. If you're sure you want to remove this account, tap <b>Delete</b> on the confirmation message. Tap <b>Cancel</b> if you don't want to delete the account.</p>
+<hr class="dots" />
+<h2 id="backup-restore" data-localize="guide-iphone">Backup & Restore</h2>
+<p data-localize="guide-iphone">Your Duo Mobile account information is backed up automatically when you <a href="https://support.apple.com/en-us/HT211228" alt="How to back up your iPhone, iPad, and iPod touch with iCloud" target="_blank" rel="noopener noreferrer">enable iCloud Backup</a> on your phone or <a href="https://support.apple.com/en-us/HT205220" alt="About encrypted backups on your iPhone, iPad, or iPod touch" target="_blank" rel="noopener noreferrer">create an encrypted iTunes backup</a>, and can be used to restore your Duo Mobile accounts <span class="important">only</span> on the same device. These backups can't be used as is to migrate your Duo accounts to a new phone.</p>
+<p data-localize="guide-iphone">If your administrator enabled Duo Mobile's backup and restore functionality and you previously backed up your Duo-protected accounts from the app to iCloud or an encrypted iTunes backup you can restore your accounts to Duo Mobile on a new iOS device via the guided recovery process. You can also opt-in to third-party account backup and recovery.</p>
+<p data-localize="guide-iphone"><a href="/duo-restore#ios">See the full Duo Restore guide for iOS</a>.</p>
+<hr class="dots">
+<h2 id="appearance" data-localize="guide-iphone">Duo Mobile Appearance</h2>
+<h3 id="adaptive-view" data-localize="guide-iphone">Adaptive View</h3>
+<p data-localize="guide-iphone">The accounts list in Duo Mobile adapts to you. If you rotate your device into a landscape view, your Duo Mobile accounts list rotates as well.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-landscape-list_2x.png" alt="Duo Mobile Landscape View" width="600"></p>
+<p data-localize="guide-iphone">The individual accounts shown in the list change appearance as well, showing the full account information when you just have a few accounts, and switching to a minimized account view when you have many accounts to minimize scrolling in the app.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-card-views_2x.png" alt="Standard and Compact Duo Mobile Account Views" width="600"></p>
+<h3 id="dark-mode" data-localize="guide-iphone">Dark Mode</h3>
+<p data-localize="guide-iphone">Duo Mobile's dark mode depends on your iOS system settings. There is no in-app toggle to enable dark mode. If your device has the system-wide dark setting enabled, Duo Mobile automatically switches to dark mode.</p>
+<p data-localize="guide-iphone"><img src="/static/images/en/ios-duo-dark-mode_2x.png" alt="Duo Mobile Dark Mode Screens" width="600"></p>
+<p data-localize="guide-iphone">You can enable dark mode on iOS in a few different ways:
+<ul data-localize="guide-iphone"><li>Go to <b>Settings</b> &rarr; <b>Display & Brightness</b> &rarr; <b>Appearance</b> and select <b>Dark</b>.</li>
+<li>If you have an iPhone X or later, swipe down on the right side of the screen to open Control Center. Press and hold the Brightness control to access additional options, and tap the <b>Dark Mode</b> button.</li>
+<li>If you have an iPhone 8 or earlier, swipe up from the bottom edge of the screen to open Control Center. Press and hold the Brightness control to access additional options, and tap the <b>Dark Mode</b> button.</li></ul>
+<hr class="dots">
+<h2 id="settings" data-localize="guide-iphone">Settings</h2>
+<p data-localize="guide-iphone">Tap the menu icon to access additional settings. From the <b>Settings</b> you can <a href="/duo-restore#enable-backup-3pr-ios" alt="iOS Third Party Duo Restore Instructions">enable backup of your third-party Duo Mobile accounts</a> and opt in to or out of sending Duo Mobile usage data to Duo. <a href="https://help.duo.com/s/article/4683" alt="Duo Mobile Privacy Information" target="_blank" rel="noopener noreferrer">Review Duo Mobile privacy information at the Duo Knowledge Base.</a></p>
+<hr class="dots">
+<h2 id="troubleshooting" data-localize="guide-iphone">Troubleshooting</h2>
+<p data-localize="guide-iphone">See the <a href="/common-issues" alt="Common Issues Page">Common Issues guide</a> for additional troubleshooting tips, or visit the <a href="https://help.duo.com/s/global-search/duo%20mobile" alt="Duo Mobile at the Duo Knowledge Base" target="_blank" rel="noopener noreferrer">Duo Knowledge Base</a>. If you aren't able to resolve your Duo Mobile issue, contact your organization's Duo administrator or Help Desk.</p>
+<h3 id="push-troubleshooting" data-localize="guide-iphone">Push Troubleshooting</h3>
+<p data-localize="guide-iphone">If you are logging in to a Duo-protected application, but you aren't receiving an expected Duo Push authentication request, try closing Duo Mobile and reopening it. Duo Mobile checks for pending push requests whenever it's opened. If this doesn't fix it, see the <a href="https://help.duo.com/s/article/2051" target="_blank" rel="noopener noreferrer">Duo Knowledge Base for additional iOS troubleshooting steps</a>.</p>
+
+<div class="visible-phone jump-container">
+<a href="#top" class="jump">Jump to top</a>
+</div>
+</div>
+</div>
+</div> <!-- .span8 -->
+</div> <!-- .row -->
+</div> <!-- .container -->
+<script src="/static/js/jquery.js?20220901t191231.446159586307807584"></script>
+<script src="/static/js/guide.js?20220901t191231.446159586307807584"></script>
+<button onclick="topFunction()" id="topButton" title="Return to top">Top</button>
+<script type="text/javascript">
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("topButton").style.display = "block";
+} else {
+document.getElementById("topButton").style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-20141016-1', 'auto', {'allowLinker': true});
+ga('require', 'linker');
+ga('linker:autoLink', ['duo.com'] );
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+<!-- Marketo -->
+<script>
+$.ajax({
+url: document.location.protocol + '//munchkin.marketo.net/munchkin.js',
+dataType: 'script',
+cache: true,
+success: function() {
+Munchkin.init('074-UQX-410');
+}
+});
+</script>
+<!-- End Marketo -->
+<!-- LocalizeJS script -->
+<script src="https://cdn.localizejs.com/localize.js"></script>
+<script>!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","detectLanguage","getAvailableLanguages","untranslatePage","bootstrap","prefetch","on","off"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);</script>
+<script>
+Localize.initialize({
+key: 'Nj09ZGcmRJDwn',
+rememberLanguage: true,
+allowInlineBreakTags: true
+});
+</script>
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="https://www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+</body>
+</html>

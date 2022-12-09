@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Using Apple Touch ID with Duo - Guide to Two-Factor Authentication &middot; Duo Security</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="iO8cWATBThKq8w53dpo9NdHOoAWSYP_CBJojpsmE7MM" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="/static/css/bootstrap.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/bootstrap-responsive.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/guide.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="//cloud.webtype.com/css/e3348ae0-a196-45c6-8abf-8157c8d62fd8.css">
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="//www.cisco.com/c/dam/cdc/t/ctm-core.js"></script>
+
+</head>
+<body>
+<div class="navbar" id="top">
+<div class="navbar-inner">
+<div class="container">
+<a href="https://duo.com" alt="duo.com Main Site"><img src="/static/images/duo-security.png" id="logo" alt="Duo Security Logo"></a>
+<a class="brand" href="/">Guide to Two-Factor Authentication</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="visible-phone toggle-nav-container">
+<a href="#nav" class="toggle-nav">Show/hide navigation</a>
+</div>
+<ul class="nav nav-list">
+<li  data-localize="guide-navigation"><a href="/" alt="Guide Home Page">Home</a></li>
+<li  data-localize="guide-navigation"><a href="/enrollment" alt="Duo Enrollment Instructions">Enrollment</a></li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Traditional Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/add-device" alt="New Device Instructions">Add a New Device</a></li>
+<li  data-localize="guide-navigation"><a href="/manage-devices" alt="Device Management Instructions">My Settings &amp; Devices</a></li>
+<li  data-localize="guide-navigation"><a href="/software-update" alt="Software Update Instructions">Software Update</a></li>
+<li  data-localize="guide-navigation"><a href="/device-health" alt="Duo Device Health Instructions">Duo Device Health</a></li>
+<li  data-localize="guide-navigation"><a href="/passwordless" alt="Duo Passwordless Instructions">Duo Passwordless</a></li>
+<li class="nav-header" alt="Duo Mobile Guides" data-localize="guide-navigation">Duo Mobile</li>
+<li  data-localize="guide-navigation"><a href="/iphone" alt="Duo Mobile iOS Instructions">iOS</a></li>
+<li  data-localize="guide-navigation"><a href="/apple-watch" alt="Duo Mobile and Apple Watch Instructions">Apple Watch</a></li>
+<li  data-localize="guide-navigation"><a href="/android" alt="Duo Mobile Android Instructions">Android</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-restore" alt="Duo Restore Instructions">Duo Restore</a></li>
+<li class="nav-header" alt="Guides for Other Devices" data-localize="guide-navigation">Other Devices</li>
+<li  data-localize="guide-navigation"><a href="/other-phones" alt="Instructions for Cell Phones and Landlines">Cell Phones &amp; Landlines</a></li>
+<li  data-localize="guide-navigation"><a href="/tokens" alt="Hardware Token Instructions">Hardware Tokens</a></li>
+<li  data-localize="guide-navigation"><a href="/security-keys" alt="Security Key Instructions">Security Keys</a></li>
+<li class="active" data-localize="guide-navigation"><a href="/touch-id" alt="Touch ID Instructions">Touch ID</a></li>
+<li class="nav-header" alt="Duo Authentication Guides" data-localize="guide-navigation">Authenticating</li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/append-mode" alt="Append Mode Instructions">Append Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/auto-mode" alt="Auto Mode Instructions">Auto Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/challenge-mode" alt="Challenge Mode Instructions">Challenge Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-sso" alt="Duo Single Sign-On Instructions">Duo Single Sign-On</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-central" alt="Duo Central Instructions">Duo Central</a></li>
+<li  data-localize="guide-navigation"><a href="/dag-launcher" alt="Duo Access Gateway Launcher Instructions">Duo Access Gateway Launcher</a></li>
+<li  data-localize="guide-navigation"><a href="/duoconnect" alt="DuoConnect Instructions">DuoConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-unix" alt="Duo Unix Instructions">Duo Unix</a></li>
+<li  data-localize="guide-navigation"><a href="/rdp" alt="Microsoft Windows Logon Instructions">Microsoft Windows Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/macos" alt="macOS Logon Instructions">macOS Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/lastpass" alt="LastPass Instructions">LastPass</a></li>
+<li  data-localize="guide-navigation"><a href="/anyconnect" alt="Cisco AnyConnect Instructions">Cisco AnyConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/vmwareview" alt="VMware View Instructions">VMware View</a></li>
+<li  data-localize="guide-navigation"><a href="/pulse" alt="Pulse VPN Client Instructions">Pulse VPN Client</a></li>
+<li  data-localize="guide-navigation"><a href="/receiver" alt="Citrix Receiver Instructions">Citrix Receiver</a></li>
+<li class="nav-header" alt="Other Guides" data-localize="guide-navigation">Other</li>
+<li  data-localize="guide-navigation"><a href="/third-party-accounts" alt="Instructions for Third-Party Accounts">Third-Party Accounts</a></li>
+<li  data-localize="guide-navigation"><a href="/common-issues" alt="Common Issues Page">Common Issues</a></li>
+<li data-localize="guide-navigation"><a href="https://help.duo.com" alt="Visit the Duo Knowledge Base at help.duo.com">Duo Knowledge Base</a></li>
+<li data-localize="guide-navigation"><a href="https://duo.com" alt="Visit the main Duo Security site">Visit duo.com</a></li>
+</ul>
+</div> <!-- .span3 -->
+<div class="span8">
+<div id="content">
+<div class="guide-article">
+
+<p data-localize="guide-touch-id">
+<table data-localize="guide-touch-id">
+<tr style="background-color:whitesmoke">
+<td style="border-left: 5px solid lightgray;border-top:0px;border-bottom:0px;border-right:0px;vertical-align:middle;text-align:left;font-size: 15px;font-weight: 500;line-height: 24px">Has your organization enabled the new Universal Prompt experience? See the <a href="/universal-prompt" alt="Universal Prompt Guide">Universal Prompt guide</a> for more information and instructions.</td>
+<td style="border:0px;vertical-align:top;text-align:center;width:200px"><a href="/universal-prompt" alt="Universal Prompt Guide"><img width="150" src="/static/images/en/up-push-prompt_2x.png" alt="Duo Push in Universal Prompt"></a></td>
+</tr>
+</table></p>
+<h1 data-localize="guide-touch-id">Touch ID and Duo</h1>
+<p class="lead" data-localize="guide-touch-id">With Touch ID on macOS, you can have secure Duo login approvals resistant to <a href="http://www.webopedia.com/TERM/P/phishing.html">phishing</a> attacks combined with the one-touch convenience you're already used to with <a href="https://duo.com/duo-push">Duo Push</a>.</p>
+<div id="toc_container" data-localize="guide-touch-id">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+<li><a href="#touch-id-requirements">Touch ID Requirements</a></li>
+<li><a href="#touch-id-video">Video Overview of Touch ID and Duo</a></li>
+<li><a href="#touch-id-enroll">Enrolling Touch ID</a></li>
+<ul class="toc_list">
+<li><a href="#touch-id-enrollment">Initial Enrollment with Touch ID</a></li>
+<li><a href="#touch-id-ssp">Adding Touch ID From the Duo Prompt</a></li>
+</ul>
+<li><a href="#touch-id-auth">Authenticating with Touch ID</a></li>
+</ul>
+</div>
+<h2 id="touch-id-requirements" data-localize="guide-touch-id">Touch ID Requirements</h2>
+<p data-localize="guide-touch-id">Support for Touch ID authentication is limited to web applications that show <a href="/prompt">Duo's inline browser prompt</a>.</p>
+<p data-localize="guide-touch-id">In order to use Touch ID with Duo, make sure you have the following:</p>
+<p data-localize="guide-touch-id"><ul data-localize="guide-touch-id">
+<li>A MacBook Pro or MacBook Air with a Touch ID button.</li>
+<li>A fingerprint enrolled in Touch ID (<a href="https://support.apple.com/en-us/HT207054" target="_blank" rel="noopener noreferrer">see how to do this at the Apple Support site</a>).</li>
+<li><a href="https://www.google.com/chrome/browser/" alt="Chrome Browser Site" target="_blank" rel="noopener noreferrer">Chrome 70</a> or later. While <a href="/passwordless" alt="Duo Passwordless Guide">Duo Passwordless</a> supports Touch ID in Safari, use of Touch ID for <b>two-factor authentication</b> in Safari and additional browsers on macOS is not available today.</li>
+</ul>
+<p data-localize="guide-touch-id">You must use a normal Chrome browsing window for Touch ID enrollment or authentication. Duo can't use Touch ID in an Incognito window.</p>
+<p data-localize="guide-touch-id">Additionally, your administrator must enable the use of Touch ID in Duo. Check with your organization's support team or help desk to verify that Touch ID is allowed if you are uncertain.</p>
+<h1 id="touch-id-video" data-localize="guide-touch-id">Video Overview of Touch ID and Duo</h1>
+<p data-localize="guide-touch-id">Learn how to enroll Touch ID in Duo and use it for authentication.</p>
+<div data-notranslate>
+<script src="https://fast.wistia.com/embed/medias/ymrihb8s9z.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ymrihb8s9z videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/ymrihb8s9z/swatch" alt="Duo Touch ID Video" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+</div>
+<h1 id="touch-id-enroll" data-localize="guide-touch-id">Enrolling Touch ID</h1>
+<p data-localize="guide-touch-id">You can enroll Touch ID during the initial <a href="/enrollment">self-enrollment process</a> or, if you have already enrolled in Duo using a different device (like your mobile phone), you can add Touch ID as an additional authentication device from the <a href="/manage-devices">device management portal</a>.</p>
+<p data-localize="guide-touch-id">If you have more than one MacBook with which you'd like to approve Duo login requests using Touch ID, you'll need to enroll each of them separately as a new Touch ID device in Duo.</p>
+<h2 id="touch-id-enrollment" data-localize="guide-touch-id">Initial Enrollment with Touch ID</h2>
+<p data-localize="guide-touch-id">Access the Duo enrollment page via a link emailed by your administrator, or when you log in for the first time to a Duo protected resource. Select <strong>Touch ID</strong> from the list of devices and then click <strong>Continue</strong>.</p>
+<p data-localize="guide-touch-id"><img width="620" src="/static/images/en/touch-id-enroll-select_2x.png" alt="Select Touch ID Enrollment"></p>
+<p data-localize="guide-touch-id">Make sure that you're not blocking pop-up windows for the enrollment site before continuing with Touch ID.</p>
+<p data-localize="guide-touch-id"><img width="620" src="/static/images/en/touch-id-enroll-intro_2x.png" alt="Touch ID Enrollment"></p>
+<p data-localize="guide-touch-id">When enrolling Touch ID, you'll be prompted to tap to enroll Touch ID. You may also be asked if you want to allow Duo to access information about Touch ID (click <b>Allow</b> if prompted).</p>
+<p data-localize="guide-touch-id">The Touch ID enrollment window prompts you to tap the Touch ID button for approval.</p>
+<p data-localize="guide-touch-id"><img width="620" src="/static/images/en/touch-id-enroll-prompt_2x.png" alt="Touch ID Prompt"></p>
+<p data-localize="guide-touch-id">Place your finger on the Touch ID button in the Touch Bar.</p>
+<p data-localize="guide-touch-id"><img src="/static/images/en/touch-id-bar-prompt_2x.png" width= "620" alt="Touch ID in MacBook Touch Bar"></p>
+<p data-localize="guide-touch-id">You'll see whether the Touch ID identification was successful or not.</p>
+<p data-localize="guide-touch-id"><img width="620" src="/static/images/en/touch-id-enroll-prompt-success_2x.png" alt="Touch ID Enrollment Success"></p>
+<p data-localize="guide-touch-id">Congratulations! You have enrolled Touch ID.
+<p data-localize="guide-touch-id"><img width="620" src="/static/images/en/touch-id-enroll-done_2x.png" alt="Touch ID Added"></p>
+<h2 id="touch-id-ssp" data-localize="guide-touch-id">Adding Touch ID From the Duo Prompt</h2>
+<p data-localize="guide-touch-id">If you previously enrolled other devices in Duo, you can easily add Touch ID as an additional authenticator as long as your administrator has enabled Duo's self-service portal.</p>
+<p data-localize="guide-touch-id">Navigate to your Duo-protected service and log in. At the Duo Prompt you'll see an <strong>Add a new device</strong> link on the left. Click it and approve the Duo login request using your already enrolled phone or other device.</p>
+<p data-localize="guide-touch-id"><img width="620" src="/static/images/en/security-key-enroll-ssp_2x.png" alt="Add a New Device Link"></p>
+<p data-localize="guide-touch-id">Proceed with the Touch ID enrollment process as shown above in <a href="#touch-id-enrollment">Initial Enrollment with Touch ID</a>.</p>
+<p data-localize="guide-touch-id"><img width="620" src="/static/images/en/touch-id-enroll-select_2x.png" alt="Touch ID Selection in Duo Prompt"></p>
+<p data-localize="guide-touch-id">You've added Touch ID as an authentication device! It is listed with your other enrolled devices.</p>
+<p data-localize="guide-touch-id"><img width="620" src="/static/images/en/touch-id-enroll-ssp-done_2x.png" alt="Touch ID Added"></p>
+<h1 id="touch-id-auth" data-localize="guide-touch-id">Authenticating with Touch ID</h1>
+<p data-localize="guide-touch-id">The next time you log on using Duo with Chrome, you can select Touch ID from the drop-down list of your authentication devices.</p>
+<p data-localize="guide-touch-id"><img width="620" src="/static/images/en/touch-id-choose-factor_2x.png" alt="Touch ID Selection in Duo Prompt"></p>
+<p data-localize="guide-touch-id">Once you select Touch ID from the list, click <b>Use Touch ID</b> and touch the Touch ID button when prompted.</p>
+<p data-localize="guide-touch-id"><img width="600" src="/static/images/en/touch-id-auth-button_2x.png" alt="Begin Touch ID Authentication"></p>
+<div class="scroll-spacer"></div>
+
+<div class="visible-phone jump-container">
+<a href="#top" class="jump">Jump to top</a>
+</div>
+</div>
+</div>
+</div> <!-- .span8 -->
+</div> <!-- .row -->
+</div> <!-- .container -->
+<script src="/static/js/jquery.js?20220901t191231.446159586307807584"></script>
+<script src="/static/js/guide.js?20220901t191231.446159586307807584"></script>
+<button onclick="topFunction()" id="topButton" title="Return to top">Top</button>
+<script type="text/javascript">
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("topButton").style.display = "block";
+} else {
+document.getElementById("topButton").style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-20141016-1', 'auto', {'allowLinker': true});
+ga('require', 'linker');
+ga('linker:autoLink', ['duo.com'] );
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+<!-- Marketo -->
+<script>
+$.ajax({
+url: document.location.protocol + '//munchkin.marketo.net/munchkin.js',
+dataType: 'script',
+cache: true,
+success: function() {
+Munchkin.init('074-UQX-410');
+}
+});
+</script>
+<!-- End Marketo -->
+<!-- LocalizeJS script -->
+<script src="https://cdn.localizejs.com/localize.js"></script>
+<script>!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","detectLanguage","getAvailableLanguages","untranslatePage","bootstrap","prefetch","on","off"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);</script>
+<script>
+Localize.initialize({
+key: 'Nj09ZGcmRJDwn',
+rememberLanguage: true,
+allowInlineBreakTags: true
+});
+</script>
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="https://www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+</body>
+</html>

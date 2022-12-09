@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Third-Party Accounts - Guide to Two-Factor Authentication &middot; Duo Security</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="iO8cWATBThKq8w53dpo9NdHOoAWSYP_CBJojpsmE7MM" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="/static/css/bootstrap.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/bootstrap-responsive.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="/static/css/guide.css?20220901t191231.446159586307807584">
+<link rel="stylesheet" href="//cloud.webtype.com/css/e3348ae0-a196-45c6-8abf-8157c8d62fd8.css">
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="//www.cisco.com/c/dam/cdc/t/ctm-core.js"></script>
+
+</head>
+<body>
+<div class="navbar" id="top">
+<div class="navbar-inner">
+<div class="container">
+<a href="https://duo.com" alt="duo.com Main Site"><img src="/static/images/duo-security.png" id="logo" alt="Duo Security Logo"></a>
+<a class="brand" href="/">Guide to Two-Factor Authentication</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="visible-phone toggle-nav-container">
+<a href="#nav" class="toggle-nav">Show/hide navigation</a>
+</div>
+<ul class="nav nav-list">
+<li  data-localize="guide-navigation"><a href="/" alt="Guide Home Page">Home</a></li>
+<li  data-localize="guide-navigation"><a href="/enrollment" alt="Duo Enrollment Instructions">Enrollment</a></li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Traditional Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/add-device" alt="New Device Instructions">Add a New Device</a></li>
+<li  data-localize="guide-navigation"><a href="/manage-devices" alt="Device Management Instructions">My Settings &amp; Devices</a></li>
+<li  data-localize="guide-navigation"><a href="/software-update" alt="Software Update Instructions">Software Update</a></li>
+<li  data-localize="guide-navigation"><a href="/device-health" alt="Duo Device Health Instructions">Duo Device Health</a></li>
+<li  data-localize="guide-navigation"><a href="/passwordless" alt="Duo Passwordless Instructions">Duo Passwordless</a></li>
+<li class="nav-header" alt="Duo Mobile Guides" data-localize="guide-navigation">Duo Mobile</li>
+<li  data-localize="guide-navigation"><a href="/iphone" alt="Duo Mobile iOS Instructions">iOS</a></li>
+<li  data-localize="guide-navigation"><a href="/apple-watch" alt="Duo Mobile and Apple Watch Instructions">Apple Watch</a></li>
+<li  data-localize="guide-navigation"><a href="/android" alt="Duo Mobile Android Instructions">Android</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-restore" alt="Duo Restore Instructions">Duo Restore</a></li>
+<li class="nav-header" alt="Guides for Other Devices" data-localize="guide-navigation">Other Devices</li>
+<li  data-localize="guide-navigation"><a href="/other-phones" alt="Instructions for Cell Phones and Landlines">Cell Phones &amp; Landlines</a></li>
+<li  data-localize="guide-navigation"><a href="/tokens" alt="Hardware Token Instructions">Hardware Tokens</a></li>
+<li  data-localize="guide-navigation"><a href="/security-keys" alt="Security Key Instructions">Security Keys</a></li>
+<li  data-localize="guide-navigation"><a href="/touch-id" alt="Touch ID Instructions">Touch ID</a></li>
+<li class="nav-header" alt="Duo Authentication Guides" data-localize="guide-navigation">Authenticating</li>
+<li  data-localize="guide-navigation"><a href="/prompt" alt="Duo Prompt Instructions">Duo Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/universal-prompt" alt="Duo Universal Prompt Instructions">Duo Universal Prompt</a></li>
+<li  data-localize="guide-navigation"><a href="/append-mode" alt="Append Mode Instructions">Append Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/auto-mode" alt="Auto Mode Instructions">Auto Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/challenge-mode" alt="Challenge Mode Instructions">Challenge Mode</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-sso" alt="Duo Single Sign-On Instructions">Duo Single Sign-On</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-central" alt="Duo Central Instructions">Duo Central</a></li>
+<li  data-localize="guide-navigation"><a href="/dag-launcher" alt="Duo Access Gateway Launcher Instructions">Duo Access Gateway Launcher</a></li>
+<li  data-localize="guide-navigation"><a href="/duoconnect" alt="DuoConnect Instructions">DuoConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/duo-unix" alt="Duo Unix Instructions">Duo Unix</a></li>
+<li  data-localize="guide-navigation"><a href="/rdp" alt="Microsoft Windows Logon Instructions">Microsoft Windows Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/macos" alt="macOS Logon Instructions">macOS Logon</a></li>
+<li  data-localize="guide-navigation"><a href="/lastpass" alt="LastPass Instructions">LastPass</a></li>
+<li  data-localize="guide-navigation"><a href="/anyconnect" alt="Cisco AnyConnect Instructions">Cisco AnyConnect</a></li>
+<li  data-localize="guide-navigation"><a href="/vmwareview" alt="VMware View Instructions">VMware View</a></li>
+<li  data-localize="guide-navigation"><a href="/pulse" alt="Pulse VPN Client Instructions">Pulse VPN Client</a></li>
+<li  data-localize="guide-navigation"><a href="/receiver" alt="Citrix Receiver Instructions">Citrix Receiver</a></li>
+<li class="nav-header" alt="Other Guides" data-localize="guide-navigation">Other</li>
+<li class="active" data-localize="guide-navigation"><a href="/third-party-accounts" alt="Instructions for Third-Party Accounts">Third-Party Accounts</a></li>
+<li  data-localize="guide-navigation"><a href="/common-issues" alt="Common Issues Page">Common Issues</a></li>
+<li data-localize="guide-navigation"><a href="https://help.duo.com" alt="Visit the Duo Knowledge Base at help.duo.com">Duo Knowledge Base</a></li>
+<li data-localize="guide-navigation"><a href="https://duo.com" alt="Visit the main Duo Security site">Visit duo.com</a></li>
+</ul>
+</div> <!-- .span3 -->
+<div class="span8">
+<div id="content">
+<div class="guide-article">
+
+<h1 data-localize="guide-third-party-accounts">Third-Party Accounts</h1>
+<p class="lead" data-localize="guide-third-party-accounts">Some online services and web applications, like Instagram, Facebook, and Snapchat, let you protect your account with a mobile-generated passcode. Use Duo Mobile to generate these passcodes, and keep all your accounts in one app.</p>
+<p data-localize="guide-third-party-accounts">There is no need to sign-up for an organizational account on duo.com if you only want to protect your personal accounts.</p>
+<p class="info" data-localize="guide-third-party-accounts">Duo does not have access to your third-party accounts or account credentials and cannot assist in account recovery beyond Duo Mobile backup and restore.</p>
+<p data-localize="guide-third-party-accounts"><b>Be sure to save any recovery information given to you by the application when you set up two-factor authentication, and <a href="/duo-restore" alt="Duo Restore" target="_blank" rel="noopener noreferrer">enable account backup and restore in Duo Mobile</a> if you set it up to generate passcodes for logging into these applications.</b></p>
+<p data-localize="guide-third-party-accounts">If you become locked out of those services and don't have a backup of your accounts in Duo Mobile, you'll need to contact the support team for that application or perform the account recovery process for each of those third-party applications.</p>
+<div id="toc_container" data-localize="guide-third-party-accounts">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+<li><a href="#setup">Third-Party Account Setup</a></li>
+<li><a href="#passcodes">Using Passcodes</a></li>
+<li><a href="#backup-restore">Backup and Restore</a></li>
+</ul>
+</div>
+<h2 id="setup" data-localize="guide-third-party-accounts">Third-Party Account Setup</h2>
+<ol data-localize="guide-third-party-accounts">
+<li>Install Duo Mobile for <a href="https&#x3a;&#x2f;&#x2f;itunes.apple.com&#x2f;us&#x2f;app&#x2f;duo-mobile&#x2f;id422663827">iPhone/iOS</a> or <a href="https&#x3a;&#x2f;&#x2f;play.google.com&#x2f;store&#x2f;apps&#x2f;details&#x3f;id&#x3d;com.duosecurity.duomobile&amp;hl&#x3d;en">Android</a>.</li>
+<li>Follow the instructions to turn on two-factor authentication (sometimes called two-step verification) for your account using an authenticator app. Ignore any mentions of Google Authenticator or other mobile applications &mdash; you'll be using Duo Mobile instead.</li>
+<li>When configuring the authenticator app in your application you'll usually be shown a QR code to scan. Open Duo Mobile and tap <b>Add</b> in the upper right of your accounts list to go to the account type selector.<br />
+<img src="/static/images/en/ios-account-types_2x.png" class="figure" width="300" alt="Duo Mobile Account Type Selector">
+</li>
+<li>If the new account you want to add shows you a QR code to scan with an authenticator app, tap <b>Use QR code</b> from Duo Mobile's <b>Add account</b> list. Scan the QR code with your camera to add the account.
+<li>
+Use Duo Mobile to scan the application's QR code shown on your screen.<br>
+<img src="/static/images/en/third-party-scan_2x.png" width="600" class="figure" alt="Third Party Account Configuration">
+</li>
+<li>
+Give the new account a name in Duo Mobile and tap <b>Save</b> to return to the accounts list.<br>
+<img src="/static/images/en/third-party-name-account_2x.png" width="300" class="figure" alt="Name Third Party Account">
+</li>
+<li>
+Finally, tap the indicator next to the account name in Duo Mobile to generate a passcode which expires in 30 seconds. Type the passcode (without a space) into the application's verification prompt on your computer to verify that the passcode generator is working properly. Then click "Next" or "Finish" or whatever link completes authenticator app registration.<br>
+<img src="/static/images/en/third-party-verify_2x.png" width="600" class="figure" alt="Third Party Account Verification">
+</li></ol>
+<p data-localize="guide-third-party-accounts">Most services also offer a secret key that you can enter if you can't scan the QR code. Instead of tapping the QR code option from the <b>Add account</b> list, scroll through the list of account types and tap the one you want to add (or tap <b>Add other account</b> if the one you want isn't listed).</p>
+<p data-localize="guide-third-party-accounts">When you tap the type of third-party account you want to add, you'll see an <b>Activation code</b> box where you can enter the activation code or key shown to you by the application. Tap <b>Next</b> to verify the activation code you entered, and then give the new account a name and tap <b>Save</b>.</p>
+<p data-localize="guide-third-party-accounts"><img src="/static/images/en/third-party-activation-code_2x.png" width="300" class="figure" alt="Third Party Account Verification"></p>
+<p data-localize="guide-third-party-accounts">Proceed to generate a passcode from your new account and enter it in the application to verify that you've set up the account correctly in Duo Mobile.</p>
+<h2 id="passcodes" data-localize="guide-third-party-accounts">Using Passcodes</h2>
+<p data-localize="guide-third-party-accounts">Now you'll use the Duo Mobile app to generate a new passcode if you're asked for one when you log into your account. If you need to use the passcode shown in Duo Mobile in another mobile app tap <b>Copy</b> and paste it into the other app.</p>
+<h2 id="backup-restore" data-localize="guide-third-party-accounts">Backup and Restore</h2>
+<p class="note"><strong>Please note:</strong> because we use the most secure storage methods on your device, if you wipe data from your device, or upgrade your device, you will need to <a href="/duo-restore">recover your third-party accounts from a previous backup with Duo Restore</a>, or reprovision your accounts. It is not possible to export third-party accounts from Duo Mobile, nor can Duo Support help recover accounts in Duo Mobile without a backup.<p data-localize="guide-third-party-accounts">
+<p data-localize="guide-third-party-accounts">We strongly recommend setting up backup or recovery access to your third-party accounts if the application provides it, e.g., a phone number or backup code, in case there is an issue restoring from Duo Mobile's third-party account backup (like if you forget your recovery password). Duo Support doesn't have any access to your accounts to restore them for you, and can't change any settings on the third-party account to let you log in without a passcode.</p>
+<p data-localize="guide-third-party-accounts">If you have issues logging in to third-party accounts after setting up the passcode app, please contact support for that application, like Instagram support if you can't log in to Instagram.</p>
+
+<div class="visible-phone jump-container">
+<a href="#top" class="jump">Jump to top</a>
+</div>
+</div>
+</div>
+</div> <!-- .span8 -->
+</div> <!-- .row -->
+</div> <!-- .container -->
+<script src="/static/js/jquery.js?20220901t191231.446159586307807584"></script>
+<script src="/static/js/guide.js?20220901t191231.446159586307807584"></script>
+<button onclick="topFunction()" id="topButton" title="Return to top">Top</button>
+<script type="text/javascript">
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("topButton").style.display = "block";
+} else {
+document.getElementById("topButton").style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-20141016-1', 'auto', {'allowLinker': true});
+ga('require', 'linker');
+ga('linker:autoLink', ['duo.com'] );
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+<!-- Marketo -->
+<script>
+$.ajax({
+url: document.location.protocol + '//munchkin.marketo.net/munchkin.js',
+dataType: 'script',
+cache: true,
+success: function() {
+Munchkin.init('074-UQX-410');
+}
+});
+</script>
+<!-- End Marketo -->
+<!-- LocalizeJS script -->
+<script src="https://cdn.localizejs.com/localize.js"></script>
+<script>!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","detectLanguage","getAvailableLanguages","untranslatePage","bootstrap","prefetch","on","off"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);</script>
+<script>
+Localize.initialize({
+key: 'Nj09ZGcmRJDwn',
+rememberLanguage: true,
+allowInlineBreakTags: true
+});
+</script>
+<!-- Cisco Security JS tags -->
+<script type="text/javascript" src="https://www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+</body>
+</html>
