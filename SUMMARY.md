@@ -2,7 +2,7 @@
 
 * [Getting Started](README.md)
 * [Create an Account](create-an-account.md)
-* [Page 1](page-1.md)
+* [AI power search box on the Product Documentation page](ai-power-search-box-on-the-product-documentation-page.md)
 * [V2 (Current)](v2-current.md)
 * [Releases](releases.md)
 * [Supported Data Source](supported-data-source.md)
