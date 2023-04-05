@@ -2,7 +2,7 @@
 
 * [Insights V3](README.md)
   * [Overview](insights-v3/overview/README.md)
-    * [Fork](insights-v3/overview/fork.md)
+    * [Forks](insights-v3/overview/forks.md)
 * [Getting Started](<README (1).md>)
 * [Create an Account](create-an-account.md)
 * [AI power search box on the Product Documentation page](ai-power-search-box-on-the-product-documentation-page.md)
