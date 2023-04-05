@@ -22,7 +22,7 @@ It shows the cumulative number of _registered_ and _active_ projects and sub-pro
 
 #### Members By Industry <a href="#members-by-industry" id="members-by-industry"></a>
 
-It shows a doughnut chart that displays analysis of active members (organizations) by the different types of industries the active members belong to. Hover over a color of the chart to view the industry name and number of active members that belong to the industry.**Other**, **** in the list, represents all other industry names combinedly that come after the top industries (by number of active members) as displayed in the list.
+It shows a doughnut chart that displays analysis of active members (organizations) by the different types of industries the active members belong to. Hover over a color of the chart to view the industry name and number of active members that belong to the industry.**Other**, in the list, represents all other industry names combinedly that come after the top industries (by number of active members) as displayed in the list.
 
 #### Members By Organization Size <a href="#members-by-organization-size" id="members-by-organization-size"></a>
 

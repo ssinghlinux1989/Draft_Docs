@@ -14,7 +14,7 @@ Following are various newly added dashboards to Insights 2.0:
 
 #### &#x20;<a href="#organization-oss-index" id="organization-oss-index"></a>
 
-Organization OSS Index, **** under Global, provides analytics of organization performance, such as how many total commits are made by the contributors from different organizations, how active or inactive an organization is in contributing code to the projects, and many more other details.
+Organization OSS Index, under Global, provides analytics of organization performance, such as how many total commits are made by the contributors from different organizations, how active or inactive an organization is in contributing code to the projects, and many more other details.
 
 #### &#x20;<a href="#global-project-trends" id="global-project-trends"></a>
 

@@ -154,7 +154,7 @@ It shows two line graphs:
    * Rate of change (in percentage) in the number of social media mentions from the previous time period to the current (selected) time period.
 2. 2\.
    * Displays periodic increase or decrease of how many times unique users (based on UUID) searched, mentioned, and shared project related articles or blogs on different media platforms, such as blog sites and news publishing websites.
-   * Average number of earned-media **** mentions during the selected time period.
+   * Average number of earned-media mentions during the selected time period.
    * Rate of change (in percentage) in the number of earned-media mentions from the previous time period to the current (selected) time period.
 
 Hover over a graph point to view the total number of unique followers by date.
