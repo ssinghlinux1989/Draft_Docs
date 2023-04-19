@@ -11,7 +11,7 @@ To apply for the new visa letter, follow these steps:
 3. From the left side navigation pane, navigate to **EVENTS>LF Events**.
 4.  On the **MY EVENTS** page, click the **Visa Letters** tab. Click the **New Letter Application** CTA to access the application page.
 
-    <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 5. On the **Visa Letter Application** page, scroll down and check the Events that you want to attend. Click **Select** to choose the event. After selecting the event, click **Next**.
 
 <figure><img src=".gitbook/assets/Visa Application CTA.png" alt=""><figcaption></figcaption></figure>
