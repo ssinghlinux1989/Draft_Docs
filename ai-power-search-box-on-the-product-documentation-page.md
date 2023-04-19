@@ -4,7 +4,7 @@ GitBook’s AI-powered search lets users ask questions in natural language and g
 
 1. Click the **Search** menu.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. On the pop-up menu, type your question and it will provide the most suitable content based on your question. Based on your search history, it will offer prospective questions to you.
 3.  Toggle between **Search** and **Lens** to search content and Ask questions.

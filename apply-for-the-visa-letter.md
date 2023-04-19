@@ -30,14 +30,14 @@ You can select the event by using **the Filter by Name**, **Time, and Location**
 * For questions, please contact [visaletters@linuxfoundation.org](mailto:visaletters@linuxfoundation.org).
 {% endhint %}
 
-7. On the **Apply** page, fill out the following mandatory information to complete the application:
+7. On the **Apply** page, fill out the following information to complete the application:
 
 * [ ] **I am applying for:** From the drop-down, select if you are applying for yourself or for someone else.
 * [ ] **Attendee Type:** Select whether you are attending the event or you are invited as a speaker.
 * [ ] **LFID Username:** It will be the default ID by which you logged in to the Individual dashboard.
 * [ ] **First and Last Name:** Enter your name if you are applying for yourself else enter the name for who you are applying.
 * [ ] **Email Address:** Enter your email address if you are applying for yourself else enter the email address for who you are applying.
-* [ ] **Passport Number:** Enter the passport number
+* [ ] **Passport Number:** Enter the passport number.
 * [ ] **Date of Birth:** Enter your date of birth or the person's date of birth for who you are applying.
 * [ ] **Country of Birth:** Enter your country or the person's country of birth for who you are applying.
 * [ ] **Phone Number, Job Title, Company:** Enter the mandatory details
