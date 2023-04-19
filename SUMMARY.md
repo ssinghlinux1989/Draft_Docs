@@ -5,6 +5,7 @@
     * [Forks](insights-v3/overview/forks.md)
 * [Getting Started](<README (1).md>)
 * [Apply for the Visa Letter](apply-for-the-visa-letter.md)
+* [Visa Application Status](visa-application-status.md)
 * [Create an Account](create-an-account.md)
 * [AI power search box on the Product Documentation page](ai-power-search-box-on-the-product-documentation-page.md)
 * [V2 (Current)](v2-current.md)
