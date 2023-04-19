@@ -13,7 +13,7 @@ To apply for the new fund requests, follow these steps:
 3. From the left side navigation pane, navigate to **EVENTS>LF Events**.
 4.  On the **MY EVENTS** page, click the **Travel Funding** tab. Click the **New Funding Application** CTA to access the application page.
 
-    <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20; 5\. On the **Travel Funding Application** page, scroll down and check the event that you want to attend. Click the **Select** button to choose the event. After selecting the event, click **Next**.
 
@@ -44,6 +44,9 @@ You can select the event by using **the Filter by Name**, **Time, and Location**
 * [ ] **Briefly describe the ways in which you are involved in technology and/or open source communities, and why you’d like to attend this conference:** Enter your justification in the text box.
 
 8. &#x20;Fill in all the fields in the form and click **Next**.
-9. On the **Expenses** page, provide your cost estimation for accommodation and airfare. Enter the name of the hotel or flight, select the type of expense, enter the price in USD, and attach the bills. Click **Add Another Expense Item** button to add another cost estimation.
-10. Click **Submit Application.**
+
+<figure><img src=".gitbook/assets/Travel funding application.png" alt=""><figcaption></figcaption></figure>
+
+8. On the **Expenses** page, provide your cost estimation for accommodation and airfare. Enter the name of the hotel or flight, select the type of expense, enter the price in USD, and attach the bills. Click **Add Another Expense Item** button to add another cost estimation.
+9. Click **Submit Application.**
 
