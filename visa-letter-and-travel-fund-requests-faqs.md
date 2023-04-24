@@ -8,3 +8,9 @@ The Linux Foundation provides a formal written document that you submit to a con
 
 No, a visa letter does not guarantee that you will get a visa. The decision to grant a visa is made by the consulate or embassy based on various factors. The visa letter simply provides additional information to support your visa application.
 
+### Can I request a Visa letter on someone else's behalf?
+
+Yes, you need to submit the application with their information, including their LF account username. They can only see the application status in their **Individual Dashboard** and you will not be able to see the status on their behalf.
+
+
+
