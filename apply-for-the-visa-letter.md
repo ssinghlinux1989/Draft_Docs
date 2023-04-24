@@ -2,7 +2,7 @@
 
 Visa letters are needed for events with international participants. They provide official documentation to support visa applications, helping attendees obtain travel documentation to enter the host country.&#x20;
 
-Providing visa letters helps expedite the visa application procedure and facilitates that event attendees may receive the required travel documents to enter the host country.
+Providing visa letters helps expedite the visa application procedure and facilitates that event attendee receive the required travel documents to enter the host country.
 
 To apply for the new visa letter, follow these steps:
 
@@ -33,14 +33,14 @@ You can select the event by using **the Filter by Name**, **Time, and Location**
 7. On the **Apply** page, fill out the following information to complete the application:
 
 * [ ] **I am applying for:** From the drop-down, select if you are applying for yourself or for someone else.
-* [ ] **Attendee Type:** Select whether you are attending the event or you are invited as a speaker.
-* [ ] **LFID Username:** It will be the default ID by which you logged in to the Individual dashboard.
-* [ ] **First and Last Name:** Enter your name if you are applying for yourself else enter the name for who you are applying.
-* [ ] **Email Address:** Enter your email address if you are applying for yourself else enter the email address for who you are applying.
+* [ ] **Attendee Type:** Select whether you are attending the event or are invited as a speaker.
+* [ ] **LFID Username:** Enter your LFID if you are applying for yourself; Otherwise the LFID of the person for whom you are applying.&#x20;
+* [ ] **First and Last Name:** Enter your name if you are applying for yourself; otherwise, enter the name for whom you are applying.
+* [ ] **Email Address:** Enter your email address if you are applying for yourself; otherwise, enter the email address for whom you are applying.
 * [ ] **Passport Number:** Enter the passport number.
-* [ ] **Date of Birth:** Enter your date of birth or the person's date of birth for who you are applying.
-* [ ] **Country of Birth:** Enter your country or the person's country of birth for who you are applying.
-* [ ] **Phone Number, Job Title, Company:** Enter the mandatory details
+* [ ] **Date of Birth:** Enter your date of birth or the person's date of birth for whom you are applying.
+* [ ] **Country of Birth:** Enter your country or the person's country of birth for whom you are applying.
+* [ ] **Phone Number, Job Title, and Company:** Enter the mandatory details.
 * [ ] **Accommodation paid by:** Select the accommodation paid from the drop-down.
 * [ ] **Mailing Address:** Enter your mailing address for future communication.
 
